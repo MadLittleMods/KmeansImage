@@ -163,6 +163,16 @@ class KmeansImage
     }
 
     /**
+     * Returns all clusters after the algorithm converges
+     *
+     * @return array
+     */
+    public function getImagePoints()
+    {
+        return $this->imagePoints;
+    }
+
+    /**
      *
      */
     public function ignoreExtremity($val)
